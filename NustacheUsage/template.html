@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>{{title}}</h2>
+
+    <div>
+        {{subTitle}}
+    </div>
+
+    <div>
+        The following is a sample of an if condition, to modify it change the value of the property "Condition"
+        <br />
+        {{#condition}}
+        <b>The condition is true!</b>
+        {{/condition}}
+        <br />
+        You can also specify an if else statement
+        {{#condition}}
+        <b>The condition is still true!</b>
+        {{/condition}}
+        {{^condition}}
+        <b>The condition is false :(</b>
+        {{/condition}}
+    </div>
+    <br />
+    <div>
+        You can also cycle through items, let's count!
+        <ul>
+            {{#items}}
+            <li>{{.}}</li>
+            {{/items}}
+        </ul>
+    </div>
+    <br />
+    <div>
+        A list of great names:
+        <ul>
+            {{#folks}}
+            <li>{{firstName}} {{lastName}}</li>
+            {{/folks}}
+        </ul>
+    </div>
+</body>
+</html>

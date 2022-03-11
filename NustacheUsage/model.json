@@ -1,0 +1,24 @@
+﻿{
+  "title": "",
+  "subTitle": "",
+  "condition": true,
+  "items": [
+    "1",
+    "2",
+    "3"
+  ],
+  "folks": [
+    {
+      "firstName": "Nyota",
+      "lastName": "Uhura"
+    },
+    {
+      "firstName": "James",
+      "lastName": "Kirk"
+    },
+    {
+      "firstName": "Pavel",
+      "lastName": "Chekov"
+    }
+  ]
+}

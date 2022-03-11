@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="model.json" />
+    <None Remove="template.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="model.json" />
+    <EmbeddedResource Include="template.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Nustache" Version="1.16.0.10" />
+  </ItemGroup>
+
+</Project>
